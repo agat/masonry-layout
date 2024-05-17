@@ -1,0 +1,14 @@
+{
+    "include": ["src"],
+    "compilerOptions": {
+        "target": "es6",
+        "lib": ["dom", "esnext"],
+        "moduleResolution": "node",
+        "declaration": true,
+        "sourceMap": true,
+        "outDir": "dist",
+        "strict": true,
+        "esModuleInterop": true
+    },
+    "exclude": ["tests", "**/*.test.*"]
+}
