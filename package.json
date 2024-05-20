@@ -18,7 +18,10 @@
     "author": "Aleksej Romanovskij",
     "license": "MIT",
     "homepage": "https://github.com/agat/masonry-layout",
-    "repository": "https://github.com/agat/masonry-layout.git",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/agat/masonry-layout.git"
+    },
     "devDependencies": {
         "@biomejs/biome": "1.7.3",
         "packemon": "4.0.1",
