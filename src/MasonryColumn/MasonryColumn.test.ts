@@ -1,7 +1,7 @@
-import { beforeEach, describe, expect, it } from '@jest/globals';
-import { options } from '../../tests/constants';
+import { beforeEach, describe, expect, it } from 'vitest';
+import { options } from '../tests/constants';
 
-import { MasonryColumn } from './MasonryColumn';
+import { MasonryColumn } from '../../esm';
 
 describe(MasonryColumn, () => {
     const item = { data: null, size: { width: 100, height: 50 } };

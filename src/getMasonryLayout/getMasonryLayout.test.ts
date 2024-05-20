@@ -1,7 +1,7 @@
-import { describe, expect, it } from '@jest/globals';
+import { describe, expect, it } from 'vitest';
 import { columns, items, options, width } from '../tests/constants';
 
-import { getMasonryLayout } from './index';
+import { getMasonryLayout } from '../index';
 
 describe(getMasonryLayout, () => {
     it('should return layout with items and height', () => {

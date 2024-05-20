@@ -1,5 +1,5 @@
-import { MasonryColumn } from '../MasonryColumn/MasonryColumn';
-import type { ItemType, OptionsType } from '../types';
+import { MasonryColumn } from '../MasonryColumn/MasonryColumn.js';
+import type { ItemType, OptionsType } from '../types.js';
 
 export class MasonryGrid<T> {
     readonly columns: MasonryColumn<T>[] = [];

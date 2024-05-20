@@ -1,0 +1,11 @@
+{
+    "extends": "tsconfig-moon/tsconfig.json",
+    "compilerOptions": {
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "outDir": "esm",
+        "rootDir": "src"
+    },
+    "include": ["src/**/*", "tests/**/*"],
+    "exclude": ["**/*.test.*"]
+}

@@ -2,28 +2,32 @@
     "name": "@agat/masonry-layout",
     "version": "1.0.0",
     "description": "A calculation for a masonry grid layout",
-    "main": "dist/index.js",
-    "files": ["dist", "src"],
+    "main": "./esm/index.js",
+    "type": "module",
     "scripts": {
-        "test": "jest",
+        "test": "vitest",
         "lint:biome": "biome check --apply ./src/",
         "lint:ts": "tsc --noEmit",
         "lint": "npm run lint:biome && npm run lint:ts",
-        "clean": "rm -rf dist",
-        "prebuild": "npm run clean",
-        "build": "tsc",
-        "production": "npm run lint && npm run build",
-        "preversion": "npm run production",
-        "postversion": "git push --follow-tags"
+        "build": "packemon build",
+        "pack": "packemon pack --declaration",
+        "production": "npm run lint && npm run pack",
+        "release": "npm publish"
     },
     "keywords": ["ts", "typescript", "masonry", "layout"],
     "author": "Aleksej Romanovskij",
     "license": "MIT",
     "homepage": "https://github.com/agat/masonry-layout",
+    "repository": "https://github.com/agat/masonry-layout.git",
     "devDependencies": {
         "@biomejs/biome": "1.7.3",
-        "@types/jest": "29.5.12",
-        "jest": "29.7.0",
-        "typescript": "5.4.5"
-    }
+        "packemon": "4.0.1",
+        "typescript": "5.4.5",
+        "vitest": "1.6.0"
+    },
+    "packemon": {
+        "platform": "browser"
+    },
+    "module": "./esm/index.js",
+    "files": ["esm/**/*", "src/**/*"]
 }

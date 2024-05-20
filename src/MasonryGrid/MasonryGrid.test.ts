@@ -1,7 +1,7 @@
-import { beforeEach, describe, expect, it } from '@jest/globals';
+import { beforeEach, describe, expect, it } from 'vitest';
 
-import { columns, items as masonryGridItems, options, width } from '../../tests/constants';
 import { MasonryColumn } from '../MasonryColumn/MasonryColumn';
+import { columns, items as masonryGridItems, options, width } from '../tests/constants';
 import type { ItemType } from '../types';
 import { MasonryGrid } from './MasonryGrid';
 

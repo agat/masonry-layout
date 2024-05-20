@@ -1,4 +1,4 @@
-import type { GridItemType, ItemType, OptionsType, RectType } from '../types';
+import type { GridItemType, ItemType, OptionsType, RectType } from '../types.js';
 
 export class MasonryColumn<T> {
     readonly x;
